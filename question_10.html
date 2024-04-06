@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Capitals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        select {
+            font-size: 16px;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        .capital {
+            font-weight: bold;
+            color: blue;
+            font-size: 18px;
+            display: none; /* Initially hide the capital */
+        }
+        input[type="radio"]:checked + .capital {
+            display: inline; /* Show the capital when radio button is checked */
+        }
+    </style>
+</head>
+<body>
+    <h2>Select a Country:</h2>
+    <div>
+        <input type="radio" id="usa" name="country" value="Washington D.C.">
+        <label for="usa">United States</label>
+        <span class="capital"> - Washington D.C.</span><br>
+        
+        <input type="radio" id="uk" name="country" value="London">
+        <label for="uk">United Kingdom</label>
+        <span class="capital"> - London</span><br>
+        
+        <input type="radio" id="france" name="country" value="Paris">
+        <label for="france">France</label>
+        <span class="capital"> - Paris</span><br>
+        
+        <input type="radio" id="germany" name="country" value="Berlin">
+        <label for="germany">Germany</label>
+        <span class="capital"> - Berlin</span><br>
+        
+        <input type="radio" id="japan" name="country" value="Tokyo">
+        <label for="japan">Japan</label>
+        <span class="capital"> - Tokyo</span><br>
+    </div>
+</body>
+</html>
